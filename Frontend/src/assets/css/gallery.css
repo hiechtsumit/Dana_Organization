@@ -1,0 +1,100 @@
+@media only screen and (max-width : 700px) {
+    .back-to-program{
+        width: 10%;
+        height: 100%;
+    }
+    .gallery-heading h2{
+        width: 90%;
+        height: 100%;
+    }
+}
+@media only screen and (min-width : 701px) {
+    .back-to-program{
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .gallery-heading h2{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.gallery{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.gallery-heading{
+    height: 7%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.back-to-program{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.gallery-heading h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: deeppink; */
+}
+
+.program-back-icon{
+    height: 25px;
+    width: 25px;
+    /* color: rgb(255, 255, 255); */
+}
+
+
+.gallery-photo{
+    height: 93%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.gallery-photo::-webkit-scrollbar{
+    display: none;
+}
+
+
+.gallery-scrolling-container{
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.gallery-all-photo-div{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* align-items: center; */
+    justify-content: center;
+}
+/* .each-photo{
+    width: 250px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    margin: 10px;
+    & img{
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+} */
+
+.program-full-details{
+    /* height: 70vh; */
+    width: 80%;
+    text-align: justify;
+}
